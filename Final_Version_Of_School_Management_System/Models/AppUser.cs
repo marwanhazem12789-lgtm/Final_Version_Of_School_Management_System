@@ -4,7 +4,8 @@ namespace Final_Version_Of_School_Management_System.Models
 {
     public class AppUser
     {
-        //elbolbol
+        //elbolbo
+       //A7A
         [Key]
         public int Id { get; set; }
         [Required]
