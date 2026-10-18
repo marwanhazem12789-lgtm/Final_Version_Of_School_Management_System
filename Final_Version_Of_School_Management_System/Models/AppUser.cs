@@ -4,6 +4,7 @@ namespace Final_Version_Of_School_Management_System.Models
 {
     public class AppUser
     {
+        //elbolbol
         [Key]
         public int Id { get; set; }
         [Required]
@@ -11,6 +12,8 @@ namespace Final_Version_Of_School_Management_System.Models
         [Required, EmailAddress]
         public string Email { get; set; }
         [Required]
-        public string Password { get; set; }    
+        public string Password { get; set; }
+        [Required]
+        public string Role { get; set; } = "Student";
     }
 }

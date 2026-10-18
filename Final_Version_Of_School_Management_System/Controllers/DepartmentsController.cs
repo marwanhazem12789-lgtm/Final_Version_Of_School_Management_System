@@ -1,5 +1,6 @@
 ﻿using Final_Version_Of_School_Management_System.Models;
 using Final_Version_Of_School_Management_System.Unit_Of_Work;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -15,6 +16,7 @@ namespace Final_Version_Of_School_Management_System.Controllers
             _unitofwork = u;
         }
         [HttpGet]
+        [Authorize(Roles = "Admin" , )]
         public IActionResult GetAll()
         {
             var y = _unitofwork.Department.GetAll();
