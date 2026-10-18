@@ -6,6 +6,7 @@ namespace Final_Version_Of_School_Management_System.Models
     {
         //elbolbo
        //A7A
+       //Suiiiiiiiiii
         [Key]
         public int Id { get; set; }
         [Required]
