@@ -9,7 +9,7 @@ namespace Final_Version_Of_School_Management_System.Mappings.TeacherMapping
         public TeacherProfile()
         {
             CreateMap<Teacher, GetAllTeachers>()
-     .ForMember(m => m.FullName, opt => opt.MapFrom(src => $"{src.FirstName} {src.LastName}"))
+     .ForMember(i => i.FullName , opt => opt.MapFrom(o => $"{o.FirstName} + {o.LastName}"))
      .ForMember(m => m.DepartmentName, opt => opt.MapFrom(src => src.Department.Name));
 
             CreateMap<CreateTeacherDto, Teacher>()
